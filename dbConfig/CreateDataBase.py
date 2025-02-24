@@ -1,4 +1,4 @@
-def CreateDB(dbName):
+def CreateDB(dbName : str):
     import sqlite3 as sql
     import os
     if not os.path.exists(dbName):  
@@ -11,7 +11,6 @@ def CreateDB(dbName):
                 NOME TEXT NOT NULL,
                 CARGO TEXT,
                 JORNADA INTEGER,
-                DATA_ADMISSAO TEXT,
                 CONTATO TEXT,
                 EMAIL TEXT,
                 SITUACAO TEXT,
